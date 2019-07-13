@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Create test [Chrome]">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="tests.SmokeValidationTest">
+                <methods>
+                    <include name="checkTitleIsDisplay"/>
+                    <include name="checkValidationVasheImyaLess2Symbols"/>
+                    <include name="checkValidationVasheImyaMore50Symbols"/>
+                    <include name="checkValidationEmailOrPhoneLess5Symbols"/>
+                    <include name="checkValidationPasswordLess6Symbols"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Create test [FireFox]">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="tests.SmokeValidationTest">
+                <methods>
+                    <include name="checkTitleIsDisplay"/>
+                    <include name="checkValidationVasheImyaLess2Symbols"/>
+                    <include name="checkValidationVasheImyaMore50Symbols"/>
+                    <include name="checkValidationEmailOrPhoneLess5Symbols"/>
+                    <include name="checkValidationPasswordLess6Symbols"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
